@@ -6,7 +6,9 @@
   ],
   "plugins": [
     "https://downloads.wordpress.org/plugin/advanced-custom-fields.latest-stable.zip",
-    "https://downloads.wordpress.org/plugin/contact-form-7.latest-stable.zip"
+    "https://downloads.wordpress.org/plugin/contact-form-7.latest-stable.zip",
+    "https://downloads.wordpress.org/plugin/woocommerce.latest-stable.zip",
+    "https://downloads.wordpress.org/plugin/polylang.latest-stable.zip"
   ],
   "config": {
     "WP_DEBUG": true,

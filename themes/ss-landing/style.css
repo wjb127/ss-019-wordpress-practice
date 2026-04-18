@@ -472,3 +472,135 @@ button { font: inherit; cursor: pointer; }
   .why__grid { grid-template-columns: repeat(4, 1fr); }
   .hero__title { font-size: 62px; }
 }
+
+/* ============================================================
+   WooCommerce
+============================================================ */
+.woo-wrap { max-width: 1120px; }
+
+.woocommerce ul.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.woocommerce ul.products li.product {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.woocommerce ul.products li.product:hover {
+  transform: translateY(-3px);
+  border-color: #2563eb;
+}
+
+.woocommerce ul.products li.product a img { width: 100%; }
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 16px 4px;
+}
+
+.woocommerce ul.products li.product .price {
+  padding: 0 16px 8px;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.woocommerce ul.products li.product .button {
+  display: block;
+  margin: 8px 16px 16px;
+  padding: 10px;
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.woocommerce ul.products li.product .button:hover { background: #000; }
+
+/* 장바구니 아이콘 */
+.nav-cart a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cart-count {
+  background: #2563eb;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============================================================
+   멤버십 전용 페이지
+============================================================ */
+.members-badge {
+  display: inline-block;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 100px;
+  letter-spacing: 0.05em;
+}
+
+.members-header { margin-bottom: 32px; }
+
+.members-content {
+  padding: 32px;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.members-footer { padding-top: 8px; }
+
+/* ============================================================
+   Polylang 언어 전환
+============================================================ */
+.lang-switcher {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lang-switcher a {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #555;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.lang-switcher .current-lang a,
+.lang-switcher a:hover {
+  border-color: #1a1a1a;
+  color: #1a1a1a;
+}
