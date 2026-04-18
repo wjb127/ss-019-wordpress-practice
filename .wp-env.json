@@ -4,15 +4,15 @@
   "themes": [
     "./themes/ss-landing"
   ],
-  "plugins": [],
+  "plugins": [
+    "https://downloads.wordpress.org/plugin/advanced-custom-fields.latest-stable.zip",
+    "https://downloads.wordpress.org/plugin/contact-form-7.latest-stable.zip"
+  ],
   "config": {
     "WP_DEBUG": true,
     "WP_DEBUG_LOG": true,
     "WP_DEBUG_DISPLAY": false,
     "SCRIPT_DEBUG": true
-  },
-  "mappings": {
-    "wp-content/mu-plugins": "./mu-plugins"
   },
   "port": 8888,
   "testsPort": 8889
