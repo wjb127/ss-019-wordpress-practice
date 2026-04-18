@@ -1,0 +1,21 @@
+{
+  "name": "ss-019-wordpress-practice",
+  "version": "0.1.0",
+  "private": true,
+  "description": "워드프레스 + 카페24 랜딩페이지 제작 연습 저장소",
+  "scripts": {
+    "start": "wp-env start",
+    "stop": "wp-env stop",
+    "destroy": "wp-env destroy",
+    "clean": "wp-env clean all",
+    "logs": "wp-env logs",
+    "cli": "wp-env run cli wp",
+    "login": "open http://localhost:8888/wp-admin"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.10.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

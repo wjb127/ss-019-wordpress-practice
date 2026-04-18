@@ -1,0 +1,42 @@
+# 의존성
+node_modules/
+vendor/
+
+# 환경 파일
+.env
+.env.local
+.env.*.local
+
+# wp-env 작업 디렉토리
+.wp-env/
+.wp-env.override.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 에디터
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 로그
+*.log
+debug.log
+
+# 빌드 산출물
+dist/
+build/
+
+# 업로드/미디어 (버전 관리 제외)
+wp-content/uploads/
+
+# 백업 파일
+*.bak
+*.backup
+*.sql
+
+# 임시 파일
+tmp/
+temp/
